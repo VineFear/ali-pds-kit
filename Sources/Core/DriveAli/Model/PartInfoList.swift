@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - PartInfoList
 public struct PartInfoList: Codable {
-    var etag: String?
-    var partSize: Int?
+    public var etag: String?
+    public var partSize: Int?
     public let partNumber: Int?
     public var uploadURL: String?
 

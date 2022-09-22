@@ -8,8 +8,8 @@
 import Foundation
 
 public struct PDSGetUploadUrlResponse: PDSModel {
-    let createAt, domainID, driveID: String
-    let uploadID: String
+    public let createAt, domainID, driveID: String
+    public let uploadID: String
     public let fileID: String
     public let partInfoList: [PartInfoList]
 

@@ -8,8 +8,8 @@
 import Foundation
 
 public struct PDSListUploadedPartResponse: PDSModel {
-    let fileID, nextPartNumberMarker, uploadID: String?
-    let uploadedParts: [PartInfoList]?
+    public let fileID, nextPartNumberMarker, uploadID: String?
+    public let uploadedParts: [PartInfoList]?
 
     enum CodingKeys: String, CodingKey {
         case fileID = "file_id"

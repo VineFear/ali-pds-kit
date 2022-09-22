@@ -9,11 +9,11 @@ import Foundation
 
 // MARK: - PDSCreateFileResponse
 public struct PDSCreateFileResponse: PDSModel {
-    let domainID, driveID, encryptMode: String?
-    let parentFileID : String?
-    let rapidUpload: Bool? // 秒传
-    let streamsUploadInfo: StreamsUploadInfo?
-    let type: String?
+    public let domainID, driveID, encryptMode: String?
+    public let parentFileID : String?
+    public let rapidUpload: Bool? // 秒传
+    public let streamsUploadInfo: StreamsUploadInfo?
+    public let type: String?
     public let fileName: String?
     public let partInfoList: [PartInfoList]?
 
@@ -36,7 +36,7 @@ public struct PDSCreateFileResponse: PDSModel {
 }
 
 // MARK: - StreamsUploadInfo
-struct StreamsUploadInfo: Codable {
-    let string: String
+public struct StreamsUploadInfo: Codable {
+    public let string: String
 }
 

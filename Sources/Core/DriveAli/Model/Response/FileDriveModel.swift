@@ -8,8 +8,8 @@
 import Foundation
 
 public struct FileDriveModel: PDSModel {
-    let items: [Item]
-    let nextMarker: String
+    public let items: [Item]
+    public let nextMarker: String
 
     enum CodingKeys: String, CodingKey {
         case items
@@ -17,12 +17,12 @@ public struct FileDriveModel: PDSModel {
     }
     
     // MARK: - Item
-    struct Item: Codable {
-        let driveID, domainID, fileID, name: String
-        let type, createdAt, updatedAt: String
-        let fileExtension: String?
-        let hidden, starred: Bool
-        let status, parentFileID, encryptMode: String
+    public struct Item: Codable {
+        public let driveID, domainID, fileID, name: String
+        public let type, createdAt, updatedAt: String
+        public let fileExtension: String?
+        public let hidden, starred: Bool
+        public let status, parentFileID, encryptMode: String
 
         enum CodingKeys: String, CodingKey {
             case driveID = "drive_id"

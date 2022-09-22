@@ -8,12 +8,12 @@
 import Foundation
 
 public struct UserInfoModel: PDSModel {
-    let domainID, userID: String
-    let avatar: String
-    let createdAt, updatedAt: Int
-    let email, nickName, phone, role: String
-    let status, userName, welcomeDescription, defaultDriveID: String
-    let userData: UserData
+    public let domainID, userID: String
+    public let avatar: String
+    public let createdAt, updatedAt: Int
+    public let email, nickName, phone, role: String
+    public let status, userName, welcomeDescription, defaultDriveID: String
+    public let userData: UserData
 
     enum CodingKeys: String, CodingKey {
         case domainID = "domain_id"
@@ -31,7 +31,7 @@ public struct UserInfoModel: PDSModel {
     }
     
     // MARK: - UserData
-    struct UserData: Codable {
-        let share: String?
+    public struct UserData: Codable {
+        public let share: String?
     }
 }

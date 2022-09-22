@@ -8,10 +8,10 @@
 import Foundation
 
 public struct PDSGetDownloadUrlResponse: PDSModel {
-    let expiration, method: String?
-    let size: Int?
-    let streamsURL: StreamsURL?
-    let url: String?
+    public let expiration, method: String?
+    public let size: Int?
+    public let streamsURL: StreamsURL?
+    public let url: String?
 
     enum CodingKeys: String, CodingKey {
         case expiration, method, size
@@ -20,8 +20,8 @@ public struct PDSGetDownloadUrlResponse: PDSModel {
     }
     
     // MARK: - StreamsURL
-    struct StreamsURL: Codable {
-        let string: String?
+    public struct StreamsURL: Codable {
+        public let string: String?
     }
 }
 

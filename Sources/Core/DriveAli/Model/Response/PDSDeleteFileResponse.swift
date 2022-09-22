@@ -8,7 +8,7 @@
 import Foundation
 
 public struct PDSDeleteFileResponse: PDSModel {
-    let asyncTaskID, domainID, driveID, fileID: String
+    public let asyncTaskID, domainID, driveID, fileID: String
 
     enum CodingKeys: String, CodingKey {
         case asyncTaskID = "async_task_id"

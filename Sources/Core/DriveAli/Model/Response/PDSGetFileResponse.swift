@@ -9,23 +9,23 @@ import Foundation
 
 // MARK: - PDSGetFileResponse
 public struct PDSGetFileResponse: PDSModel {
-    let category, contentHash, contentHashName, contentType: String?
-    let crc64Hash, createdAt, pdsGetFileResponseDescription, domainID: String?
-    let downloadURL: String?
-    let driveID, encryptMode, fileExtension, fileID: String?
-    let hidden: Bool?
-    let imageMediaMetadata: ImageMediaMetadata?
-    let labels: [String]?
-    let meta, name, parentFileID: String?
-    let size: Int?
-    let starred: Bool?
-    let status: String?
-    let streamsURLInfo: StreamsURLInfo?
-    let thumbnail: String?
-    let trashedAt, type, updatedAt, uploadID: String?
-    let url: String?
-    let userMeta: String?
-    let videoMediaMetadata: VideoMediaMetadata?
+    public let category, contentHash, contentHashName, contentType: String?
+    public let crc64Hash, createdAt, pdsGetFileResponseDescription, domainID: String?
+    public let downloadURL: String?
+    public let driveID, encryptMode, fileExtension, fileID: String?
+    public let hidden: Bool?
+    public let imageMediaMetadata: ImageMediaMetadata?
+    public let labels: [String]?
+    public let meta, name, parentFileID: String?
+    public let size: Int?
+    public let starred: Bool?
+    public let status: String?
+    public let streamsURLInfo: StreamsURLInfo?
+    public let thumbnail: String?
+    public let trashedAt, type, updatedAt, uploadID: String?
+    public let url: String?
+    public let userMeta: String?
+    public let videoMediaMetadata: VideoMediaMetadata?
     
     enum CodingKeys: String, CodingKey {
         case category
@@ -58,12 +58,12 @@ public struct PDSGetFileResponse: PDSModel {
     }
     
     // MARK: - ImageMediaMetadata
-    struct ImageMediaMetadata: Codable {
-        let addressLine, city, country, district: String?
-        let exif, faces: String?
-        let height: Int?
-        let location, province, time, township: String?
-        let width: Int?
+    public struct ImageMediaMetadata: Codable {
+        public let addressLine, city, country, district: String?
+        public let exif, faces: String?
+        public let height: Int?
+        public let location, province, time, township: String?
+        public let width: Int?
         
         enum CodingKeys: String, CodingKey {
             case addressLine = "address_line"
@@ -72,15 +72,15 @@ public struct PDSGetFileResponse: PDSModel {
     }
     
     // MARK: - StreamsURLInfo
-    struct StreamsURLInfo: Codable {
-        let string: String?
+    public struct StreamsURLInfo: Codable {
+        public let string: String?
     }
     
     // MARK: - VideoMediaMetadata
-    struct VideoMediaMetadata: Codable {
-        let addressLine, city, country, district: String?
-        let duration, location, province, time: String?
-        let township: String?
+    public struct VideoMediaMetadata: Codable {
+        public let addressLine, city, country, district: String?
+        public let duration, location, province, time: String?
+        public let township: String?
         
         enum CodingKeys: String, CodingKey {
             case addressLine = "address_line"
